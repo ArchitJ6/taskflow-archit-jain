@@ -338,27 +338,3 @@ Response `204 No Content`.
 ```json
 { "error": "not found" }
 ```
-
----
-
-## Submission Notes
-
-### Automatic Disqualifiers
-
-The following would result in immediate rejection, regardless of other quality:
-
-- App does not run with `docker compose up`
-- No database migrations
-- Passwords stored in plaintext
-- JWT secret hardcoded in source code instead of `.env`
-- No README
-- Submission after the 72-hour deadline without prior notice
-
-### Submission Instructions
-
-- Create a public GitHub repository named `taskflow-[your-name]`.
-- Use a monorepo with `/backend` and `/frontend`, or two linked repos with `docker-compose.yml` at the root.
-- Commit `.env.example` and never commit `.env`.
-- If secrets are ever committed accidentally, rotate them before submission.
-- Send the GitHub URL back before the deadline.
-- Be prepared to walk through the code on a review call.
